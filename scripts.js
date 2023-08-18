@@ -37,7 +37,7 @@ function postCity(city){
 }
 
 function getAllCities(){
-    $.get('/api/cities', (result) => {
+    $.get('/api/city', (result) => {
         if (result.statusCode === 200) {
             addCards(result.data);
         }
