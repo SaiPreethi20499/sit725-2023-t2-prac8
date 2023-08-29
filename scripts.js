@@ -44,6 +44,8 @@ function getAllCities(){
     });
 }
 
+
+
 $(document).ready(function(){
     $('.materialboxed').materialbox();
     $('#formSubmit').click(()=>{

@@ -18,4 +18,15 @@ const getAllCities = (req,res) => {
     });
 }
 
-module.exports = {postCity,getAllCities}
+const deleteCity = (req,res) => {    
+    let city = req.body;
+    collection.deleteCity(city, (err,result) => {
+        if(!err){
+            res.json({statusCode:400,data:result,message:'failure success'});
+        }
+    });
+}
+
+
+
+module.exports = {postCity,getAllCities,deleteCity}

@@ -11,4 +11,8 @@ function getAllCities(callback){
     collection.find({}).toArray(callback);
 }
 
-module.exports = {insertCity,getAllCities}
+function deleteCity(city,callback) {
+    collection.deleteOne(city,callback);
+}
+
+module.exports = {insertCity,getAllCities,deleteCity}

@@ -12,4 +12,9 @@ router.get('/', (req,res)=>{
     controller.getAllCities(req,res);
 });
 
+router.delete('/', (req,res)=>{
+    controller.deleteCity(req,res);
+});
+
+
 module.exports = router;
