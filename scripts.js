@@ -44,7 +44,10 @@ function getAllCities(){
     });
 }
 
-
+let socket = io();
+socket.on('number',(message)=>{
+    console.log('Random Number is: ' + message);
+});
 
 $(document).ready(function(){
     $('.materialboxed').materialbox();
